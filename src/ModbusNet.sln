@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspiClient", "RaspiClient\RaspiClient.csproj", "{302ECE80-1AB5-43AE-9508-6A655F5F70DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.Models", "Modbus.Models\Modbus.Models.csproj", "{B7D44C2B-EEAB-4690-9020-C99372F5E777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.Server", "Modbus.Server\Modbus.Server.csproj", "{6E51F913-F3FA-4930-957D-8E3159DE89EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.Slave", "Modbus.Slave\Modbus.Slave.csproj", "{BFEB83BF-0334-4745-A825-29B72D820CB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{302ECE80-1AB5-43AE-9508-6A655F5F70DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302ECE80-1AB5-43AE-9508-6A655F5F70DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302ECE80-1AB5-43AE-9508-6A655F5F70DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302ECE80-1AB5-43AE-9508-6A655F5F70DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D44C2B-EEAB-4690-9020-C99372F5E777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D44C2B-EEAB-4690-9020-C99372F5E777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D44C2B-EEAB-4690-9020-C99372F5E777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D44C2B-EEAB-4690-9020-C99372F5E777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E51F913-F3FA-4930-957D-8E3159DE89EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E51F913-F3FA-4930-957D-8E3159DE89EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E51F913-F3FA-4930-957D-8E3159DE89EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E51F913-F3FA-4930-957D-8E3159DE89EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFEB83BF-0334-4745-A825-29B72D820CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEB83BF-0334-4745-A825-29B72D820CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEB83BF-0334-4745-A825-29B72D820CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEB83BF-0334-4745-A825-29B72D820CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A7DC6F8-9479-40D6-B62D-0CC9F7B6A2B3}
+	EndGlobalSection
+EndGlobal
