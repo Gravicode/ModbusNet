@@ -26,11 +26,12 @@ public class Worker : BackgroundService
         var host = Dns.GetHostEntry(Dns.GetHostName());
         var ipAddress = host.AddressList.Where(x => x.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork).FirstOrDefault() ?? IPAddress.Parse("127.0.0.1");
         var port = 10502;
-        _modbusServer.CreateServer(ipAddress, port);
+        var ipadr = IPAddress.Parse("192.168.18.73");
+        _modbusServer.CreateServer(ipadr, port);
         _modbusServer.AddSlave(_unitId);
         _modbusServer.StartServer();
-        _modbusClient.CreateMaster(ipAddress, port);
-        Console.WriteLine($"Modbus server on IP:{ipAddress}");
+        _modbusClient.CreateMaster(ipadr, port);
+        Console.WriteLine($"Modbus server on IP:{ipadr}");
         return base.StartAsync(cancellationToken);
     }
     public override Task StopAsync(CancellationToken cancellationToken)
