@@ -55,8 +55,8 @@ public class Worker : BackgroundService
         ushort address = 18000;
         foreach (var prop in props)
         {
-            Console.WriteLine(prop.GetType().ToString());
-            if (!prop.GetType().ToString().Contains( "DateTime"))
+            Console.WriteLine(prop.PropertyType.ToString());
+            if (!prop.PropertyType.ToString().Contains( "DateTime"))
             {
                 var value = Convert.ToSingle(prop.GetValue(performance));
                 var convertedValue = value.ToUnsignedShortArray();
