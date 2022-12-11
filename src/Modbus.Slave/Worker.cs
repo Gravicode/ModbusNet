@@ -1,4 +1,5 @@
 ﻿using Modbus.Models;
+using Modbus.Shared;
 using System.Net;
 
 namespace Modbus.Slave;

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.Slave", "Modbus.Slav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.Web", "Modbus.Web\Modbus.Web.csproj", "{82BE570A-C70C-4E9A-8575-7FECBFD0A626}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.Shared", "Modbus.Shared\Modbus.Shared.csproj", "{05C9F19F-24C5-45F4-9066-E411EA8AD7B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{82BE570A-C70C-4E9A-8575-7FECBFD0A626}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82BE570A-C70C-4E9A-8575-7FECBFD0A626}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82BE570A-C70C-4E9A-8575-7FECBFD0A626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C9F19F-24C5-45F4-9066-E411EA8AD7B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C9F19F-24C5-45F4-9066-E411EA8AD7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C9F19F-24C5-45F4-9066-E411EA8AD7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C9F19F-24C5-45F4-9066-E411EA8AD7B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,5 +14,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modbus.Models\Modbus.Models.csproj" />
+    <ProjectReference Include="..\Modbus.Shared\Modbus.Shared.csproj" />
   </ItemGroup>
 </Project>

@@ -9,8 +9,16 @@
 
   <ItemGroup>
     <None Remove="NModbus" />
+    <None Remove="System.Configuration.ConfigurationManager" />
+    <None Remove="Microsoft.AspNet.WebApi.Client" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NModbus" Version="3.0.72" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modbus.Models\Modbus.Models.csproj" />
+    <ProjectReference Include="..\Modbus.Shared\Modbus.Shared.csproj" />
   </ItemGroup>
 </Project>

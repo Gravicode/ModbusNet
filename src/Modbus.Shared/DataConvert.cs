@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Modbus.Slave
+namespace Modbus.Shared
 {
     public static class DataConvert
     {
