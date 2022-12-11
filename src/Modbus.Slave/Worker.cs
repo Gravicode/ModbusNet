@@ -30,6 +30,7 @@ public class Worker : BackgroundService
         _modbusServer.AddSlave(_unitId);
         _modbusServer.StartServer();
         _modbusClient.CreateMaster(ipAddress, port);
+        Console.WriteLine($"Modbus server on IP:{ipAddress}");
         return base.StartAsync(cancellationToken);
     }
     public override Task StopAsync(CancellationToken cancellationToken)
