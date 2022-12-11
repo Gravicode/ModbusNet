@@ -1,0 +1,60 @@
+﻿@page "/modbus"
+@inject IDevicePerformanceService DeviceService
+
+<PageTitle>Modbus Data</PageTitle>
+
+<h1>Modbus Data</h1>
+
+<p>Get Data from Modbus device / server</p>
+
+@if (datas == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>CPU Usage</th>
+                <th>Memory Usage</th>
+                <th>CPU Temp</th>
+                <th>CPU Heat</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in datas)
+            {
+                <tr>
+                    <td>@item.TimeStamp</td>
+                    <td>@item.CpuUsage</td>
+                    <td>@item.MemoryUsage</td>
+                    <td>@item.CpuTemperature</td>
+                    <td>@item.CpuHeat</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    BlazorTimer timer = new();
+    private List<Models.DevicePerformance> datas;
+
+    protected override async Task OnInitializedAsync()
+    {
+        timer.SetTimer(1000);
+        timer.OnElapsed += async () => {
+            await LoadData();
+            await InvokeAsync(StateHasChanged);
+        };
+        await LoadData();
+    }
+
+    async Task LoadData()
+    {
+        datas = await DeviceService.GetAllData();
+    }
+}
+

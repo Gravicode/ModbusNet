@@ -23,6 +23,20 @@ namespace Modbus.Web
             await _ctx.SaveChangesAsync();
             return entity;
         }
+        public async Task<List<DevicePerformance>> GetAllData()
+        {
+            try
+            {
+                var datas = _ctx.DevicePerformances.ToList();
+                return datas;
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return default;
+            }
+        }
     }
 
 }
