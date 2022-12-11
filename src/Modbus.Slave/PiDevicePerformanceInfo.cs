@@ -26,6 +26,7 @@ public class PiDevicePerformanceInfo:IPiDevicePerformanceInfo
             CpuUsage = GetCpuUsage(),
             MemoryUsage = GetMemoryUsage(),
             CpuHeat = GetCpuTemperature(),
+            CpuTemperature = GetCpuTemperature()
         };
     }
 
