@@ -44,7 +44,7 @@ public class Worker : BackgroundService
         {
 
             var performanceData = _devicePerformance.GetPerformanceInfo();
-            WriteData(performanceData);
+            //WriteData(performanceData);
             _logger.LogInformation($"Cpu Usage:{performanceData.CpuUsage} -- Cpu Temperature:{performanceData.CpuTemperature} -- Ram Usage:{performanceData.MemoryUsage} -- TimeStamp:{DateTime.Now}");
             await Task.Delay(5000, stoppingToken);
         }
